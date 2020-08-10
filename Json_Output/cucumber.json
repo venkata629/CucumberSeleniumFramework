@@ -3,175 +3,68 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 259317,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 133065,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 135775,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.beforeFirst()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "This is First test",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "test-tagged-hooks;this-is-first-test",
-        "after": [
-          {
-            "result": {
-              "duration": 54473,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.afterFirst()"
-            }
-          },
-          {
-            "result": {
-              "duration": 44919,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 81175,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 85898436,
+              "duration": 6457566200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2986218800,
               "status": "passed"
             },
             "line": 5,
-            "name": "this is the first step",
+            "name": "title of login page is Amazon",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 98039,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "this is the second step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+              "location": "LoginStepDefinition.title_of_login_page_is_Amazon()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 84479,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "this is the third step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@First"
           }
         ]
       },
       {
+        "comments": [
+          {
+            "line": 7,
+            "value": "#without Examples Keyword"
+          }
+        ],
         "before": [
           {
             "result": {
-              "duration": 112120,
+              "duration": 576300,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHooksStepDefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 82098,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 76810,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.beforeSecond()"
+              "location": "Hooks_StepDefinition.setUP()"
             }
           }
         ],
-        "line": 10,
-        "name": "This is Second test",
+        "line": 8,
+        "name": "Amazon Login Test Scenario",
         "description": "",
-        "id": "test-tagged-hooks;this-is-second-test",
+        "id": "amazon-login-feature;amazon-login-test-scenario",
         "after": [
           {
             "result": {
-              "duration": 92284,
+              "duration": 153400,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHooksStepDefinition.afterSecond()"
-            }
-          },
-          {
-            "result": {
-              "duration": 140453,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 66290,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
+              "location": "Hooks_StepDefinition.tearDown()"
             }
           }
         ],
@@ -180,45 +73,94 @@
         "steps": [
           {
             "result": {
-              "duration": 127029,
+              "duration": 4444216200,
               "status": "passed"
             },
             "line": 11,
-            "name": "this is the first step",
+            "name": "user enters \"9885673983\" and \"Sairam@143\"",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+              "arguments": [
+                {
+                  "val": "9885673983",
+                  "offset": 13
+                },
+                {
+                  "val": "Sairam@143",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2264083500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 399686100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_hopme_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 809925000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5258963100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 88211,
+              "duration": 2886848300,
               "status": "passed"
             },
-            "line": 12,
-            "name": "this is the second step",
+            "line": 5,
+            "name": "title of login page is Amazon",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+              "location": "LoginStepDefinition.title_of_login_page_is_Amazon()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 88937,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "this is the third step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 9,
-            "name": "@Second"
           }
         ]
       },
@@ -226,117 +168,226 @@
         "before": [
           {
             "result": {
-              "duration": 120620,
+              "duration": 303800,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHooksStepDefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 76143,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 67536,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.beforeThird()"
+              "location": "Hooks_StepDefinition.setUP()"
             }
           }
         ],
-        "line": 16,
-        "name": "This is Third test",
+        "line": 28,
+        "name": "Amazon Login Test Scenario",
         "description": "",
-        "id": "test-tagged-hooks;this-is-third-test",
+        "id": "amazon-login-feature;amazon-login-test-scenario;;2",
         "after": [
           {
             "result": {
-              "duration": 74866,
+              "duration": 108300,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHooksStepDefinition.afterThird()"
-            }
-          },
-          {
-            "result": {
-              "duration": 67355,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 66706,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
+              "location": "Hooks_StepDefinition.tearDown()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 69572,
+              "duration": 4184934400,
               "status": "passed"
             },
-            "line": 17,
-            "name": "this is the first step",
+            "line": 21,
+            "name": "user enters \"9885673983\" and \"Sairam@143\"",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+              "arguments": [
+                {
+                  "val": "9885673983",
+                  "offset": 13
+                },
+                {
+                  "val": "Sairam@143",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2015396800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411982400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_hopme_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 795945800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5034702900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 72834,
+              "duration": 2859445700,
               "status": "passed"
             },
-            "line": 18,
-            "name": "this is the second step",
+            "line": 5,
+            "name": "title of login page is Amazon",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+              "location": "LoginStepDefinition.title_of_login_page_is_Amazon()"
             },
             "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 238800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.setUP()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Amazon Login Test Scenario",
+        "description": "",
+        "id": "amazon-login-feature;amazon-login-test-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 335000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11004187000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//input[@id \u003d\"ap_password\"]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-IOGOAHH\u0027, ip: \u0027192.168.1.6\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefinitions.LoginStepDefinition.user_enters_username_and_password(LoginStepDefinition.java:83)\r\n\tat ✽.Then user enters \"tom\" and \"test456\"(src/test/resource/Features/login.feature:21)\r\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "user enters \"tom\" and \"test456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tom",
+                  "offset": 13
+                },
+                {
+                  "val": "test456",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 71562,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 19,
-            "name": "this is the third step",
+            "line": 22,
+            "name": "user clicks on login button",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 15,
-            "name": "@Third"
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_hopme_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test Tagged Hooks",
+    "name": "Amazon Login Feature",
     "description": "",
-    "id": "test-tagged-hooks",
+    "id": "amazon-login-feature",
     "keyword": "Feature",
-    "uri": "/Users/NaveenKhunteta/Documents/workspace/FreeCrmBDDFramework/src/main/java/Features/taggedhooks.feature"
+    "uri": "src/test/resource/Features/login.feature"
   }
 ]

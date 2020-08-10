@@ -1,20 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.088351">
-<testcase classname="Test Tagged Hooks" name="This is First test" time="0.08679">
-<system-out><![CDATA[Given this is the first step................................................passed
-When this is the second step................................................passed
-Then this is the third step.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Tagged Hooks" name="This is Second test" time="0.000874">
-<system-out><![CDATA[Given this is the first step................................................passed
-When this is the second step................................................passed
-Then this is the third step.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Tagged Hooks" name="This is Third test" time="0.000687">
-<system-out><![CDATA[Given this is the first step................................................passed
-When this is the second step................................................passed
-Then this is the third step.................................................passed
-]]></system-out>
-</testcase>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="51.815818">
+    <testcase classname="Amazon Login Feature" name="Amazon Login Test Scenario" time="17.362426">
+        <system-out>
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Amazon..........................................passed
+Then user enters "9885673983" and "Sairam@143"..............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon Login Feature" name="Amazon Login Test Scenario" time="15.554483">
+        <system-out>
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Amazon..........................................passed
+Then user enters "9885673983" and "Sairam@143"..............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon Login Feature" name="Amazon Login Test Scenario 2" time="18.898909">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id =&quot;ap_password&quot;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-IOGOAHH', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_enters_username_and_password(LoginStepDefinition.java:83)&#13;&#10;&#9;at ✽.Then user enters &quot;tom&quot; and &quot;test456&quot;(src/test/resource/Features/login.feature:21)&#13;&#10;">
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Amazon..........................................passed
+Then user enters "tom" and "test456"........................................failed
+Then user clicks on login button............................................skipped
+Then user is on home page...................................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id ="ap_password"]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IOGOAHH', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinitions.LoginStepDefinition.user_enters_username_and_password(LoginStepDefinition.java:83)
+	at ✽.Then user enters "tom" and "test456"(src/test/resource/Features/login.feature:21)
+]]>
+        </failure>
+    </testcase>
 </testsuite>
