@@ -25,6 +25,5 @@ Then Close the browser
 
 Examples:
 	| username   | password   |
-	| 9885673983 | Sairam@143 |
-	|  tom       | test456    | 	
+	| 9885673983 | Sairam@143 |		
 		
