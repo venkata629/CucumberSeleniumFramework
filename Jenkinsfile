@@ -14,7 +14,10 @@ pipeline {
             steps {
                    bat 'mvn test'
                   }
-            
+             }
+        
+        stage ('Reporting Stage') {
+
             Steps {
              
                  publishHTML (target: [
@@ -23,10 +26,8 @@ pipeline {
                  keepAll: true,
                  reportDir: 'coverage',
                  reportFiles: 'index.html',
-                 reportName: "Cucumber Report"
-                            ])
-                } 
-            }
-    } 
-    
-}
+                 reportName: "Cucumber Report"])
+                     } 
+               }
+           } 
+   }
