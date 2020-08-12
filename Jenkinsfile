@@ -21,7 +21,7 @@ pipeline {
 
                 Steps {
                       //Cucumber buildStatus :"UNSTABLE",
-                          fileIncludePattren : "**/index.html",
+                          fileIncludePattren : "*/index.html",
                            htmlReportDirectory : 'test-outout'  
                        } 
                    }
