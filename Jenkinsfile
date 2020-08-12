@@ -20,7 +20,7 @@ pipeline {
             stage ('Cucumber Reports') {
 
                 Steps {
-                      Cucumber buildstatus :"UNSTABLE",
+                      //Cucumber buildStatus :"UNSTABLE",
                           fileIncludePattren : "**/index.html",
                            htmlReportDirectory : 'test-outout'  
                        } 
