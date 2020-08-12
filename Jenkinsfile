@@ -2,32 +2,26 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile Stage') {
 
-            steps {
-                   bat 'mvn clean compile'
-                  }
-            }
+            stage ('Compile Stage') {
 
-        stage ('Testing Stage') {
+                steps {
+                       bat 'mvn clean compile'
+                      }
+                }
 
-            steps {
-                   bat 'mvn test'
-                  }
-             }
-        
-        stage ('Reporting Stage') {
+            stage ('Testing Stage') {
 
-            Steps {
-             
-                 publishHTML (target: [
-                 allowMissing: false,
-                 alwaysLinkToLastBuild: false,
-                 keepAll: true,
-                 reportDir: 'coverage',
-                 reportFiles: 'index.html',
-                 reportName: "Cucumber Report"])
-                     } 
-               }
+                steps {
+                       bat 'mvn test'
+                      }
+                 }
+
+            stage ('Reporting Stage') {
+
+                Steps {
+                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'Coverage', reportFiles: 'index.html', reportName: 'Cucumber HTML Report', reportTitles: ''])
+                       } 
+                   }
            } 
    }
