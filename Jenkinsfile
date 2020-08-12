@@ -14,7 +14,20 @@ pipeline {
             steps {
                    bat 'mvn test'
                   }
+            
+            Steps {
+             
+                 publishHTML (target: [
+                 allowMissing: false,
+                 alwaysLinkToLastBuild: false,
+                 keepAll: true,
+                 reportDir: 'coverage',
+                 reportFiles: 'index.html',
+                 reportName: "Cucumber Report"
+                            ])
+            } 
         }
+        
 
        
     }
