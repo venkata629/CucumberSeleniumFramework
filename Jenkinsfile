@@ -23,7 +23,7 @@ pipeline {
                     script{
                          cucumber buildStatus: "UNSTABLE",
                         fileIncludePattern: 'cucumber.json',
-                        jsonReportDirectory: '**/json_output'
+                        jsonReportDirectory: 'json_output'
                         }
                      
                      } 
