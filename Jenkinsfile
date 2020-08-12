@@ -17,12 +17,12 @@ pipeline {
                       }
                  }
 
-            stage ('Reporting Stage') {
+            stage ('Cucumber Reports') {
 
                 Steps {
-                      // Archive the built artifacts
-                        archive (includes: 'pkg/*.gem')
-                         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'Coverage', reportFiles: 'index.html', reportName: 'Cucumber HTML Report', reportTitles: ''])
+                      Cucumber buildstatus :"UNSTABLE",
+                          fileIncludePattren : "**/index.html",
+                           htmlReportDirectory : 'test-outout'  
                        } 
                    }
            } 
