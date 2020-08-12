@@ -20,7 +20,9 @@ pipeline {
             stage ('Reporting Stage') {
 
                 Steps {
-                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'Coverage', reportFiles: 'index.html', reportName: 'Cucumber HTML Report', reportTitles: ''])
+                      // Archive the built artifacts
+                        archive (includes: 'pkg/*.gem')
+                         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'Coverage', reportFiles: 'index.html', reportName: 'Cucumber HTML Report', reportTitles: ''])
                        } 
                    }
            } 
