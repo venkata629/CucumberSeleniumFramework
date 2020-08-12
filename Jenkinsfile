@@ -7,7 +7,7 @@ pipeline {
             steps {
                    bat 'mvn clean compile'
                   }
-        }
+            }
 
         stage ('Testing Stage') {
 
@@ -25,10 +25,8 @@ pipeline {
                  reportFiles: 'index.html',
                  reportName: "Cucumber Report"
                             ])
-            } 
-        }
-        
-
-       
-    }
+                } 
+            }
+ 
+    
 }
